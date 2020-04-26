@@ -3,24 +3,17 @@
 
 using namespace std;
 
-void staircase(int n) {
-    int i = 1;
-
-    while (i <= n) {
-        // Print out '#' n times
-        cout << string(i, '#') << endl;
-        i++;
-    }
-
-}
-
-int main()
-{
+int main(void) {
     int n;
     cin >> n;
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
-
-    staircase(n);
-
+    if (n == 0) {
+        cout << "" << endl;
+    }
+    int space = 0;
+    for (int i = 1; i <= n; i++) {
+        space = n-i;
+        cout << string(space, ' ');
+        cout << string(i, '#') << endl;
+    }
     return 0;
 }
