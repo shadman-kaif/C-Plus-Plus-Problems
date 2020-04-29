@@ -10,10 +10,7 @@ bool isPrime(int num) {
       if (num%i == 0) {
         return false;
       }
-      // Else, it is prime
-      else {
-        return true;
-      }
     }
   }
+  return true;
 }
