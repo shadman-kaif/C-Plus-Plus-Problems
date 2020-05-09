@@ -6,14 +6,11 @@ public:
     int odd = 0;
     int even = 0;
     
-    for(size_t i = 0; i < c.size(); i++)
-    {
-        if(c[i] % 2 == 1)
-        {
+    for(int i = 0; i < c.size(); i++){
+        if(c[i] % 2 == 1){
             odd++;
         }
-        else
-        {
+        else{
             even++;
         }
     }
