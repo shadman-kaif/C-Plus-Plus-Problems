@@ -1,5 +1,6 @@
 class Solution {
 public:
+    
     /*
     Given an array of numbers arr. A sequence of numbers is called an arithmetic progression if the difference between any 
     two consecutive elements is  the same.
